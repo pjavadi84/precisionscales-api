@@ -1,3 +1,3 @@
 class Vendor < ApplicationRecord
-    has_many :equipments, dependent: :destroy
+    has_many :equipments
 end
