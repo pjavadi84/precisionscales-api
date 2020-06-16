@@ -1,7 +1,7 @@
 class Api::V1::EquipmentController < ApplicationController
     def index
         @equipment = Equipment.all
-        render json: @equipment
+        render json: EquipmentSerializer.new(@equipment)
     end
 
     def create
